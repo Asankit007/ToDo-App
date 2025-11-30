@@ -1,0 +1,24 @@
+.animated-bg {
+  background: linear-gradient(
+    to bottom,
+    #8fd7b3,
+    #aee8c6,
+    #c2e7d3
+  );
+  
+  /* Smooth gradient movement effect */
+  background-size: 200% 200%;
+  animation: gradientMove 10s ease-in-out infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: top left;
+  }
+  50% {
+    background-position: bottom right;
+  }
+  100% {
+    background-position: top left;
+  }
+}
